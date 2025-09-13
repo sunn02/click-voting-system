@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');  
+
+.container {     
+    height: 100%;     
+    width: 100%;     
+    display: flex;     
+    justify-content: center; 
+}  
+
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 700px; 
+    padding: 0 20px; 
+    margin: 5vh auto;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem; 
+}
+
+h1 {     
+    font-family: "Anton", sans-serif;     
+    font-weight: 400;     
+    font-size: 150px;      
+    color: white;     
+    text-align: center;     
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.5),                 
+                0 0 40px rgba(255, 227, 82, 0.3);
+    margin: 0;     
+    line-height: 1.1; 
+}    
+
+h2 {     
+    font-family: "League Spartan", sans-serif;     
+    font-weight: 700;     
+    font-size: 60px;     
+    color: black;     
+    text-align: center;
+    margin: 0;
+    line-height: 1.1; 
+}  
+
+app-search-bar {
+    margin-top: 1rem;
+    width: 100%;
+}
+

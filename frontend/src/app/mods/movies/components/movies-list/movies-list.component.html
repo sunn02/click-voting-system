@@ -1,0 +1,19 @@
+<div class="movie-list">
+  <div class="movie-card" *ngFor="let movie of rankedMovies" (click)="onRowClick(movie)" >
+    <div class="movie-content">
+        <p class="rank">{{ movie.rank }}</p>
+        <img [src]="movie.poster" alt="" />
+
+        <div class="movie-info">
+            <h2>{{ movie.title }}</h2>
+            <p>{{ movie.year }}</p>
+            <p>{{ movie.genre }}</p>
+            <p>{{ movie.vote }} votes</p>
+        </div>
+
+        <button pButton (click)="onDelete(movie); $event.stopPropagation()" [rounded]="true" [text]="true">
+            <i class="pi pi-trash" pButtonIcon></i>
+        </button>
+        </div>
+    </div>
+</div>

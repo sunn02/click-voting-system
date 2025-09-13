@@ -1,0 +1,14 @@
+<div class="container">
+    <main>
+    <header>
+        <h1>CLICK!</h1>
+        <h2>YOUR MOVIE</h2>
+        <app-search-bar #searchInput [results]="results" (action)="onSearchAction($event)"></app-search-bar>
+    </header>
+
+    <section>
+        <app-movies-list [list]="movies" (action)="onListAction($event)"></app-movies-list>
+    </section>
+</main>
+</div>
+

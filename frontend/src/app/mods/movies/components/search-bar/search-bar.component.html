@@ -1,0 +1,29 @@
+<div class="search-wrapper">
+  <p-iconfield>
+    <p-inputicon class="pi pi-search" #searchInput />
+    <input #searchInputField pInputText type="text" (input)="onInput($event)" placeholder="Search your movie..." class="search-bar" [class.with-results]="results.length > 0"/>
+  </p-iconfield>
+    <div class="results-container" *ngIf="results.length > 0">
+      <ul>
+        <li *ngFor="let movie of results">
+
+          <div class="movie-info">
+            <img src="{{ movie.Poster }}" alt="">
+            
+            <div class="text-info">
+              <p class="movie-title">{{ movie.Title }}</p>
+              <p class="movie-year">{{ movie.Year }}</p>
+            </div>
+          </div>
+            
+            <button pButton (click)="onAdd(movie.imdbID)" [rounded]="true" [text]="true">
+            <i class="pi pi-plus" pButtonIcon></i>
+            </button>
+
+          
+        </li>
+      </ul>
+    </div>
+</div>
+
+
