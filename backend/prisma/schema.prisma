@@ -12,8 +12,9 @@ datasource db {
 model Movie {
   id        Int     @id @default(autoincrement())
   title     String
-  plot      String 
+  year      Int 
   poster    String
   genre     String
+  imdbID    String
   vote      Int @default(0)     
 }
