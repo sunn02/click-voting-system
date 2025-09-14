@@ -71,13 +71,11 @@ npm install
 ng serve
 ```
 
-> Nota: el proxy de desarrollo permite que Angular llame al backend local. En producción se usa la URL pública del backend.
-
 ---
 
 ## Despliegue Público
 
-* **Frontend:** [Netlify](https://click-system.netlify.app/)
+* **Frontend:** [Netlify](https://click-voting-system.netlify.app/)
 * **Backend:** [Render](https://click-voting-system.onrender.com/)
 
 ---
